@@ -1,0 +1,10 @@
+/* Aparelho deitado (landscape) */
+
+
+body {
+    background-image:  url(/Exercicios/ex026/mq002/imagens/cev-landscape.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    /* Este comando fixa a imagem embaixo */
+
+}
