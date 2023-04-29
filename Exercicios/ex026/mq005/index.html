@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li ><a href="#">Opição 1 </a> </li>
+                <li ><a href="#">Opição 2 </a> </li>
+                <li ><a href="#">Opição 3 </a></li>
+                <li ><a href="#">Opição 4 </a> </li>
+                <li ><a href="#">Opição 5 </a> </li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            
+                <p>
+                    Media Queries - Problemas
+                    Os problemas das media queries são que cada vez mais surgem dispositivos com diversos tamanhos e também com hardwares bem parecidos aos dos desktops, fazendo com que esses dispositivos tenha uma navegação quase igual aos dos desktops. Podemos citar como exemplo o iPhone, sua tela tem excelente qualidade e seu navegador reproduz as páginas como um navegador comum de desktop. Assim não há a necessidade de preparar um layout e um CSS com media type Handheld para o iPhone, pois mesmo ele sendo um Handheld, ele não trabalha como um, porém, é importante frisar que ele também não trabalha exatamente como um desktop. Mesmo a renderização do MobileSafari sendo idêntica ao de um desktop, existe a questão do comportamento do usuário e a forma de navegação que são diferentes. Assim ficamos em um meio termo, nem podendo disponibilizar um CSS específico para Handheld e nem um CSS totalmente Screen.
+                </p>
+
+                <p>
+                    Media Queries  Solução
+                    A solução é que as media queries definem condições de um CSS especifico, isso significa que se essas condições forem aprovadas, ou seja, se o dispositivo se adequar a todas as condições, o CSS será aplicado.
+                </p>
+
+                <p>Media Feature
+                    Para diferenciamos um dispositivo do outro, precisamos utilizar as características de cada um, para isso utilizamos as media features, que reconhecem certos recursos do dispositivo no qual está sendo visualizada a página. Abaixo temos um exemplo.</p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui nesciunt excepturi, et odit omnis ea provident repudiandae, eaque, adipisci quod! Reprehenderit harum, earum corrupti quod commodi laborum enim omnis.lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque iusto ea itaque eos provident neque a debitis obcaecati, ipsam assumenda nulla, repellendus molestiae. Accusamus quod minus quas quia veniam voluptates.
+                </p>
+
+            
+        </article>
+    </main>
+        <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }  else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho()
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+            
+    </script>
+</body>
+</html>
